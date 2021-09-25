@@ -1,0 +1,132 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: rgb(245, 247, 255);
+  --desaturated-blue: rgb(114, 128, 167);
+  --dark-blue: rgb(31, 47, 86);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.App {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  overflow: hidden;
+  border-radius: 1.5rem;
+  max-width: 37.5rem;
+  width: 90%;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+a,
+.btn {
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  border: none;
+}
+
+.payment-btn {
+  font-weight: 700;
+  color: var(--very-pale-blue);
+  background-color: var(--bright-blue);
+  border-radius: 0.8rem;
+  padding: 1.4rem;
+  margin: 1.2rem 0;
+  border: none;
+  box-shadow: 0.4rem 1rem 1.2rem rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+.payment-btn:hover {
+  opacity: 0.8;
+}
+
+.hero-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  background-color: white;
+  padding: 4rem 3rem;
+  text-align: center;
+}
+main h1 {
+  font-weight: 700;
+  color: var(--dark-blue);
+  font-size: 2.4rem;
+}
+main p {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 1.2rem 0;
+}
+
+.form .form-control {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.8rem;
+  margin: 1.2rem 0;
+  background-color: var(--very-pale-blue);
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.form .form-control h2, .form .form-control h3 {
+  margin: 0;
+}
+.form .form-control .plan-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1.4rem;
+}
+.form .form-control .plan-type h2 {
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.form .form-control .plan-type h3 {
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+.form .form-control .form-choice {
+  color: var(--bright-blue);
+  font-weight: 700;
+  margin-left: auto;
+  transition: all 0.3s ease;
+}
+.form .form-control .form-choice:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.form .cancel-choice {
+  display: block;
+  margin-top: 2rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+.form .cancel-choice:hover {
+  color: var(--dark-blue);
+}
+
+/*# sourceMappingURL=App.css.map */
